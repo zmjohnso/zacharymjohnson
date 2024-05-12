@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Zachary M. Johnson</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Zachary M. Johnson</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 May 2024 18:45:02 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Streamlining Data Migrations in Contentful</title>
+      <link>http://localhost:1313/posts/streamlining-data-migrations-in-contentful/</link>
+      <pubDate>Sat, 11 May 2024 18:45:02 -0400</pubDate>
+      <guid>http://localhost:1313/posts/streamlining-data-migrations-in-contentful/</guid>
+      <description>Recently, I completed a large data migration on the PhotoVoice Japan website. The purpose of this migration was to clean up existing content models and utilize Contentful’s locales feature to allow for cleaner and more efficient multi-language support. Thanks to Contentful’s use of multiple Environments within a project Space, this migration was quite straightforward.&#xA;Cloning your Existing Environment Fortunately, Contentful offers a very generous free &amp;ldquo;Intro&amp;rdquo; space license. Under the Intro license we are allowed three environments.</description>
+    </item>
+  </channel>
+</rss>
