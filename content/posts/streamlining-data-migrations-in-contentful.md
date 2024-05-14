@@ -26,11 +26,11 @@ Now that we have a new "v2" environment, we can make whatever changes we want to
 
 ## Pointing Production to the New Environment
 
-In order to get your code working with the new environment, we will need to update a few secrets as well as change from API token settings in the Contentful dashboard. First, go to "Settings" then "API keys" in the Contentful dashboard. Here, you may either create a new API key or provide your current development access token with access to the new environment. For my use case, I opted for the latter. In the specific access token settings, you will simply want to scroll down to the bottom and make sure both environments are enabled:
+In order to get your code working with the new environment, we will need to update a few secrets as well as change some API token settings in the Contentful dashboard. First, go to "Settings" then "API keys" in the Contentful dashboard. Here, you may either create a new API key or provide your current development access token with access to the new environment. For my use case, I opted for the latter. In the specific access token settings, you will simply want to scroll down to the bottom and make sure both environments are enabled:
 
 ![Contentful Environment Selection](/images/streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png)
 
-On the code side of things, you will need to update your "environment" value from "master" to "v2". Assuming this value is not hard-coded, you will also want to make sure you update the environment string in your deployment pipelines. Once your API key has been updated with the new access permissions and your code has been changed to point to the new environment, you should start seeing your site utilizing your new entries and content models.
+On the code side of things, you will need to update your "environment" value from "master" to "v2". Assuming this value is not hard-coded, you will also want to make sure you update the environment string in your deployment pipelines. Once your API key has been updated with the new permissions and your code has been changed to point to the new environment, you should start seeing your site utilizing your "v2" entries and content models.
 
 ## Take Advantage of Contentful Environments
 
