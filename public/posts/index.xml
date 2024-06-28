@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Zachary M. Johnson</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 May 2024 18:45:02 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jun 2024 18:45:02 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Benefits of Lifting State to the URL</title>
+      <link>http://localhost:1313/posts/benefits-of-lifting-state-to-the-url/</link>
+      <pubDate>Thu, 27 Jun 2024 18:45:02 -0400</pubDate>
+      <guid>http://localhost:1313/posts/benefits-of-lifting-state-to-the-url/</guid>
+      <description>I recently found myself needing to lift some parts of my application state into the URL. I usually default to use some state management solution in my web projects, and I am a huge fan of Zustand. However, there comes a time when using this type of state management alone may not provide all the desired functionality.&#xA;Why Lift State Normally, when using something like Redux, the global store lives in memory within the JavaScript runtime of your application.</description>
+    </item>
     <item>
       <title>Streamlining Data Migrations in Contentful</title>
       <link>http://localhost:1313/posts/streamlining-data-migrations-in-contentful/</link>

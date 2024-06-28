@@ -1,6 +1,6 @@
 +++
 title = 'Benefits of Lifting State to the URL'
-date = 2024-05-31T18:05:16-04:00
+date = 2024-06-27T18:45:02-04:00
 draft = false
 +++
 
