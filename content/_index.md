@@ -6,4 +6,6 @@ cascade:
   featured_image: ""
 ---
 
-Welcome to my blog with some of my posts about my current interests, namely tech and travel. I hope you find these articles valuable!
+# Welcome to My Blog!
+
+Here, I share insights on technical topics and software development. If you'd like to know more about me and my journey, visit the [About page](/about). I hope you find these articles helpful!
