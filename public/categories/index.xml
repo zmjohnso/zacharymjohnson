@@ -1,8 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - Zachary M. Johnson</title>
-        <link>http://zacharymjohnson.blog/categories/</link>
-        <description>Categories - Category - Zachary M. Johnson</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>zachary.business@tutanota.com (Zachary M. Johnson)</managingEditor>
-            <webMaster>zachary.business@tutanota.com (Zachary M. Johnson)</webMaster><atom:link href="http://zacharymjohnson.blog/categories/" rel="self" type="application/rss+xml" /></channel>
-</rss>
