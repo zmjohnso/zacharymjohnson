@@ -1,55 +1,55 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - Tag - Zachary M. Johnson</title>
-        <link>http://localhost:1313/tags/</link>
+        <link>http://zacharymjohnson.blog/tags/</link>
         <description>Tags - Tag - Zachary M. Johnson</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>zachary.business@tutanota.com (Zachary M. Johnson)</managingEditor>
-            <webMaster>zachary.business@tutanota.com (Zachary M. Johnson)</webMaster><lastBuildDate>Wed, 20 Nov 2024 13:00:00 -0500</lastBuildDate><atom:link href="http://localhost:1313/tags/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>zachary.business@tutanota.com (Zachary M. Johnson)</webMaster><lastBuildDate>Wed, 20 Nov 2024 13:00:00 -0500</lastBuildDate><atom:link href="http://zacharymjohnson.blog/tags/" rel="self" type="application/rss+xml" /><item>
     <title>Next.js</title>
-    <link>http://localhost:1313/tags/next.js/</link>
+    <link>http://zacharymjohnson.blog/tags/next.js/</link>
     <pubDate>Wed, 20 Nov 2024 13:00:00 -0500</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/tags/next.js/</guid>
+    <guid>http://zacharymjohnson.blog/tags/next.js/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>React</title>
-    <link>http://localhost:1313/tags/react/</link>
+    <link>http://zacharymjohnson.blog/tags/react/</link>
     <pubDate>Wed, 20 Nov 2024 13:00:00 -0500</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/tags/react/</guid>
+    <guid>http://zacharymjohnson.blog/tags/react/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>GraphQL</title>
-    <link>http://localhost:1313/tags/graphql/</link>
+    <link>http://zacharymjohnson.blog/tags/graphql/</link>
     <pubDate>Thu, 03 Oct 2024 13:00:00 -0400</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/tags/graphql/</guid>
+    <guid>http://zacharymjohnson.blog/tags/graphql/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>REST</title>
-    <link>http://localhost:1313/tags/rest/</link>
+    <link>http://zacharymjohnson.blog/tags/rest/</link>
     <pubDate>Thu, 03 Oct 2024 13:00:00 -0400</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/tags/rest/</guid>
+    <guid>http://zacharymjohnson.blog/tags/rest/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>State Management</title>
-    <link>http://localhost:1313/tags/state-management/</link>
+    <link>http://zacharymjohnson.blog/tags/state-management/</link>
     <pubDate>Thu, 27 Jun 2024 18:45:02 -0400</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/tags/state-management/</guid>
+    <guid>http://zacharymjohnson.blog/tags/state-management/</guid>
     <description><![CDATA[]]></description>
 </item>
 <item>
     <title>Contentful</title>
-    <link>http://localhost:1313/tags/contentful/</link>
+    <link>http://zacharymjohnson.blog/tags/contentful/</link>
     <pubDate>Sat, 11 May 2024 18:45:02 -0400</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/tags/contentful/</guid>
+    <guid>http://zacharymjohnson.blog/tags/contentful/</guid>
     <description><![CDATA[]]></description>
 </item>
 </channel>

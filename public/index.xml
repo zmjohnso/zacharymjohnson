@@ -1,25 +1,25 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Zachary M. Johnson</title>
-        <link>http://localhost:1313/</link>
+        <link>http://zacharymjohnson.blog/</link>
         <description>Zachary M. Johnson&#39;s Personal Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>zachary.business@tutanota.com (Zachary M. Johnson)</managingEditor>
             <webMaster>zachary.business@tutanota.com (Zachary M. Johnson)</webMaster><lastBuildDate>Sat, 29 Mar 2025 11:04:49 &#43;0800</lastBuildDate>
-            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="http://zacharymjohnson.blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Next.js for React Devs</title>
-    <link>http://localhost:1313/nextjs-for-react-devs/</link>
+    <link>http://zacharymjohnson.blog/nextjs-for-react-devs/</link>
     <pubDate>Wed, 20 Nov 2024 13:00:00 -0500</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/nextjs-for-react-devs/</guid>
+    <guid>http://zacharymjohnson.blog/nextjs-for-react-devs/</guid>
     <description><![CDATA[<p>I have always started my new web projects off with vanilla React, then added routing (<a href="https://reactrouter.com/en/main" target="_blank" rel="noopener noreffer ">react router</a>), state management (<a href="https://spin.atomicobject.com/zustand-alternative-redux/" target="_blank" rel="noopener noreffer ">zustand</a>), etc., once I had the need for them. As the project would grow over time, more and more packages would need to be added. Eventually, you basically end up with your own custom framework. This is why the React team <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreffer ">has started to recommend</a> building new apps and websites with an existing React framework. Some currently supported production ready frameworks include Next.js, Remix and Gatsby. However, at the time of this writing, only Next.js supports all the latest React features, such as <a href="https://react.dev/reference/rsc/server-components" target="_blank" rel="noopener noreffer ">React Server Components</a> (RSCs). Therefore, given the React teams recommendation to start new projects off with a framework, my own experience with building &ldquo;custom&rdquo; React frameworks and the ability to utilize cutting edge React features such as RSCs, I have started using Next.js for my new web apps. Here are a few challenges that I ran into, from the perspective of a React developer.</p>]]></description>
 </item>
 <item>
     <title>GraphQL: a Breath of Fresh Air</title>
-    <link>http://localhost:1313/graphql-a-breathof-fresh-air/</link>
+    <link>http://zacharymjohnson.blog/graphql-a-breathof-fresh-air/</link>
     <pubDate>Thu, 03 Oct 2024 13:00:00 -0400</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/graphql-a-breathof-fresh-air/</guid>
+    <guid>http://zacharymjohnson.blog/graphql-a-breathof-fresh-air/</guid>
     <description><![CDATA[<p>Recently, upon migrating <a href="https://www.lalisolari.com/" target="_blank" rel="noopener noreffer ">Lali Solari&rsquo;s</a> personal website from vanilla React to
 Next.js (see <a href="https://www.contentful.com/blog/integrate-contentful-next-js-app-router/" target="_blank" rel="noopener noreffer ">this Contentful blog post</a>
 for a great guide on getting started with Next.js App Router and Contentful), I decided to try out the Contentful GrapQL API.
@@ -30,10 +30,10 @@ back the data that I need, I found the Contentful GraphQL API experience even be
 </item>
 <item>
     <title>Benefits of Lifting State to the URL</title>
-    <link>http://localhost:1313/benefits-of-lifting-state-to-the-url/</link>
+    <link>http://zacharymjohnson.blog/benefits-of-lifting-state-to-the-url/</link>
     <pubDate>Thu, 27 Jun 2024 18:45:02 -0400</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/benefits-of-lifting-state-to-the-url/</guid>
+    <guid>http://zacharymjohnson.blog/benefits-of-lifting-state-to-the-url/</guid>
     <description><![CDATA[<p>I recently found myself needing to lift some parts of my application state into the URL.
 I usually default to use some state management solution in my web projects, and I am
 a huge fan of <a href="https://spin.atomicobject.com/zustand-alternative-redux/" target="_blank" rel="noopener noreffer ">Zustand</a>.
@@ -49,10 +49,10 @@ is stored in runtime memory, this isn&rsquo;t possible.</p>]]></description>
 </item>
 <item>
     <title>Streamlining Data Migrations in Contentful</title>
-    <link>http://localhost:1313/streamlining-data-migrations-in-contentful/</link>
+    <link>http://zacharymjohnson.blog/streamlining-data-migrations-in-contentful/</link>
     <pubDate>Sat, 11 May 2024 18:45:02 -0400</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/streamlining-data-migrations-in-contentful/</guid>
+    <guid>http://zacharymjohnson.blog/streamlining-data-migrations-in-contentful/</guid>
     <description><![CDATA[<p>Recently, I completed a large data migration on the <a href="https://photovoicejapan.com/" target="_blank" rel="noopener noreffer ">PhotoVoice Japan</a> website. The purpose of this migration was to clean up existing content models and utilize Contentful’s locales feature to allow for cleaner and more efficient multi-language support. Thanks to Contentful’s use of multiple Environments within a project Space, this migration was quite straightforward.</p>
 <h2 id="cloning-your-existing-environment">Cloning your Existing Environment</h2>
 <p>Fortunately, Contentful offers a very generous free &ldquo;Intro&rdquo; space license. Under the Intro license we are allowed three environments.</p>]]></description>

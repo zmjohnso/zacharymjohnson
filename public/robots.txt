@@ -1,5 +1,7 @@
 User-agent: *
 
+Algolia-Crawler-Verif: 852CC421418C8089
+
 Disallow: /images/
 Disallow: /js/
 Disallow: /css/
@@ -61,4 +63,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: http://localhost:1313/sitemap.xml
+Sitemap: http://zacharymjohnson.blog/sitemap.xml

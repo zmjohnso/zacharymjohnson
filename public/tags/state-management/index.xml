@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>State Management - Tag - Zachary M. Johnson</title>
-        <link>http://localhost:1313/tags/state-management/</link>
+        <link>http://zacharymjohnson.blog/tags/state-management/</link>
         <description>State Management - Tag - Zachary M. Johnson</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>zachary.business@tutanota.com (Zachary M. Johnson)</managingEditor>
-            <webMaster>zachary.business@tutanota.com (Zachary M. Johnson)</webMaster><lastBuildDate>Thu, 27 Jun 2024 18:45:02 -0400</lastBuildDate><atom:link href="http://localhost:1313/tags/state-management/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>zachary.business@tutanota.com (Zachary M. Johnson)</webMaster><lastBuildDate>Thu, 27 Jun 2024 18:45:02 -0400</lastBuildDate><atom:link href="http://zacharymjohnson.blog/tags/state-management/" rel="self" type="application/rss+xml" /><item>
     <title>Benefits of Lifting State to the URL</title>
-    <link>http://localhost:1313/benefits-of-lifting-state-to-the-url/</link>
+    <link>http://zacharymjohnson.blog/benefits-of-lifting-state-to-the-url/</link>
     <pubDate>Thu, 27 Jun 2024 18:45:02 -0400</pubDate>
     <author>Zachary M. Johnson</author>
-    <guid>http://localhost:1313/benefits-of-lifting-state-to-the-url/</guid>
+    <guid>http://zacharymjohnson.blog/benefits-of-lifting-state-to-the-url/</guid>
     <description><![CDATA[<p>I recently found myself needing to lift some parts of my application state into the URL.
 I usually default to use some state management solution in my web projects, and I am
 a huge fan of <a href="https://spin.atomicobject.com/zustand-alternative-redux/" target="_blank" rel="noopener noreffer ">Zustand</a>.
