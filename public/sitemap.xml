@@ -1,0 +1,19 @@
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>http://localhost:1313/about/</loc><lastmod>2025-03-29T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/</loc><lastmod>2025-03-29T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>http://localhost:1313/tags/next.js/</loc><lastmod>2024-11-20T13:00:00-05:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/nextjs-for-react-devs/</loc><lastmod>2024-11-20T13:00:00-05:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/posts/</loc><lastmod>2024-11-20T13:00:00-05:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/react/</loc><lastmod>2024-11-20T13:00:00-05:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/</loc><lastmod>2024-11-20T13:00:00-05:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/graphql/</loc><lastmod>2024-10-03T13:00:00-04:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/graphql-a-breathof-fresh-air/</loc><lastmod>2024-10-03T13:00:00-04:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/rest/</loc><lastmod>2024-10-03T13:00:00-04:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/benefits-of-lifting-state-to-the-url/</loc><lastmod>2024-06-27T18:45:02-04:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/state-management/</loc><lastmod>2024-06-27T18:45:02-04:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/tags/contentful/</loc><lastmod>2024-05-11T18:45:02-04:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/streamlining-data-migrations-in-contentful/</loc><lastmod>2024-05-11T18:45:02-04:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>http://localhost:1313/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>

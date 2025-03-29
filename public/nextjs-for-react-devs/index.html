@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Next.js for React Devs - Zachary M. Johnson</title><meta name="Description" content="Zachary M. Johnson&#39;s Personal Blog"><meta property="og:url" content="http://localhost:1313/nextjs-for-react-devs/">
+  <meta property="og:site_name" content="Zachary M. Johnson">
+  <meta property="og:title" content="Next.js for React Devs">
+  <meta property="og:description" content="I have always started my new web projects off with vanilla React, then added routing (react router), state management (zustand), etc., once I had the need for them. As the project would grow over time, more and more packages would need to be added. Eventually, you basically end up with your own custom framework. This is why the React team has started to recommend building new apps and websites with an existing React framework. Some currently supported production ready frameworks include Next.js, Remix and Gatsby. However, at the time of this writing, only Next.js supports all the latest React features, such as React Server Components (RSCs). Therefore, given the React teams recommendation to start new projects off with a framework, my own experience with building “custom” React frameworks and the ability to utilize cutting edge React features such as RSCs, I have started using Next.js for my new web apps. Here are a few challenges that I ran into, from the perspective of a React developer.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-20T13:00:00-05:00">
+    <meta property="article:modified_time" content="2024-11-20T13:00:00-05:00">
+    <meta property="article:tag" content="Next.js">
+    <meta property="article:tag" content="React">
+    <meta property="og:image" content="http://localhost:1313/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/logo.png">
+  <meta name="twitter:title" content="Next.js for React Devs">
+  <meta name="twitter:description" content="I have always started my new web projects off with vanilla React, then added routing (react router), state management (zustand), etc., once I had the need for them. As the project would grow over time, more and more packages would need to be added. Eventually, you basically end up with your own custom framework. This is why the React team has started to recommend building new apps and websites with an existing React framework. Some currently supported production ready frameworks include Next.js, Remix and Gatsby. However, at the time of this writing, only Next.js supports all the latest React features, such as React Server Components (RSCs). Therefore, given the React teams recommendation to start new projects off with a framework, my own experience with building “custom” React frameworks and the ability to utilize cutting edge React features such as RSCs, I have started using Next.js for my new web apps. Here are a few challenges that I ran into, from the perspective of a React developer.">
+<meta name="application-name" content="Zachary M. Johnson">
+<meta name="apple-mobile-web-app-title" content="Zachary M. Johnson">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/nextjs-for-react-devs/" /><link rel="prev" href="http://localhost:1313/graphql-a-breathof-fresh-air/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Next.js for React Devs",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/nextjs-for-react-devs\/"
+        },"image": ["http:\/\/localhost:1313\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Next.js, React","wordcount":  1061 ,
+        "url": "http:\/\/localhost:1313\/nextjs-for-react-devs\/","datePublished": "2024-11-20T13:00:00-05:00","dateModified": "2024-11-20T13:00:00-05:00","publisher": {
+            "@type": "Organization",
+            "name": "Zachary M. Johnson","logo": "http:\/\/localhost:1313\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Zachary M. Johnson"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Zachary M. Johnson">Zachary M. Johnson</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/zmjohnso/zacharymjohnson" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Zachary M. Johnson">Zachary M. Johnson</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/zmjohnso/zacharymjohnson" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Next.js for React Devs</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Zachary M. Johnson</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-11-20">2024-11-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1061 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#everything-is-a-server-component">Everything is a Server Component</a></li>
+    <li><a href="#image-vs-img"><code>&lt;Image/&gt;</code> vs <code>&lt;img/&gt;</code></a></li>
+    <li><a href="#hosting-your-nextjs-app">Hosting Your Next.js App</a></li>
+    <li><a href="#nextjs-the-future-of-react">Next.js: the Future of React</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>I have always started my new web projects off with vanilla React, then added routing (<a href="https://reactrouter.com/en/main" target="_blank" rel="noopener noreffer ">react router</a>), state management (<a href="https://spin.atomicobject.com/zustand-alternative-redux/" target="_blank" rel="noopener noreffer ">zustand</a>), etc., once I had the need for them. As the project would grow over time, more and more packages would need to be added. Eventually, you basically end up with your own custom framework. This is why the React team <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreffer ">has started to recommend</a> building new apps and websites with an existing React framework. Some currently supported production ready frameworks include Next.js, Remix and Gatsby. However, at the time of this writing, only Next.js supports all the latest React features, such as <a href="https://react.dev/reference/rsc/server-components" target="_blank" rel="noopener noreffer ">React Server Components</a> (RSCs). Therefore, given the React teams recommendation to start new projects off with a framework, my own experience with building &ldquo;custom&rdquo; React frameworks and the ability to utilize cutting edge React features such as RSCs, I have started using Next.js for my new web apps. Here are a few challenges that I ran into, from the perspective of a React developer.</p>
+<h2 id="everything-is-a-server-component">Everything is a Server Component</h2>
+<p>By default, when creating a new component with Next.js, that component will be a server component. This means that the code in that server component will be rendered on the server. Therefore, any &ldquo;reactive&rdquo; code (such as <code>useState</code>, <code>useEffect</code>, etc.) cannot be used in the server component. If you want to use these hooks, you will need to create a new component and annotate it with the <code>&quot;use client&quot;</code> directive. Note: the sever component has no such annotation. All components are simply server components by default. This design encourages you to do the bulk of the rendering on the server, and thinking very carefully about what code needs to respond to user interaction, and which code is simply &ldquo;static.&rdquo; For example, here is the code for the <code>Header</code> component from <a href="https://www.lalisolari.com/en" target="_blank" rel="noopener noreffer ">lalisolari.com</a>:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><pre tabindex="0"><code>import { FaInstagram } from &#34;@react-icons/all-files/fa/FaInstagram&#34;;
+import LanguageDropdown from &#34;./languageDropdown&#34;;
+import Logo from &#34;./logo&#34;;
+
+export default function Header() {
+  return (
+    &lt;header className=&#34;flex flex-col bg-transparent shadow-none py-2&#34;&gt;
+      &lt;div className=&#34;flex justify-between items-center&#34;&gt;
+        &lt;Logo /&gt;
+        &lt;div className=&#34;flex flex-row pr-2 md:pr-4&#34;&gt;
+          &lt;LanguageDropdown /&gt;
+          &lt;a
+            href=&#34;https://www.instagram.com/lalisolariart/&#34;
+            target=&#34;_blank&#34;
+            rel=&#34;noopener noreferrer&#34;
+          &gt;
+            &lt;button
+              aria-label=&#34;instagram link button&#34;
+              className=&#34;p-2 rounded-full bg-white text-gray-500 hover:bg-gray-100&#34;
+            &gt;
+              &lt;FaInstagram size={23} /&gt;
+            &lt;/button&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+  );
+}</code></pre></div>
+<p>We can see that this is a server component that renders a logo, some static icons and buttons, and language dropdown component. That <code>LanguageDropdown</code> component makes use of React <code>useState</code> and <code>useRef</code>, therefore it needs to be a client component. Here is how the start of that code looks:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><pre tabindex="0"><code>&#34;use client&#34;;
+
+import { useState, useRef, useEffect, useTransition } from &#34;react&#34;;
+import { MdTranslate } from &#34;@react-icons/all-files/md/MdTranslate&#34;;
+import { usePathname, useRouter } from &#34;../navigation&#34;;
+import clsx from &#34;clsx&#34;;
+
+export default function LanguageDropdown() {
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef&lt;HTMLDivElement&gt;(null);
+  ....</code></pre></div>
+<p>Splitting the code in this manner allows for doing the maximum amount of server side rendering, therefore reducing the JavaScript bundle size sent to the client. See <a href="https://nextjs.org/docs/app/building-your-application/rendering/server-components#benefits-of-server-rendering" target="_blank" rel="noopener noreffer ">this link</a> from the Next.js docs for a full list of the benefits of Server Rendering. Normally, React devs are accustomed to splitting up web pages into many different components (as opposed to one page one component). Next.js and server components now also introduce the idea of splitting the components up further into the sections that can be rendered on the server and those which respond to user action (on the client).</p>
+<h2 id="image-vs-img"><code>&lt;Image/&gt;</code> vs <code>&lt;img/&gt;</code></h2>
+<p>Another concept that I initially struggled with when switching to Next.js was the <code>&lt;Image /&gt;</code> component. In my vanilla React apps, I was used to doing the following:</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><pre tabindex="0"><code>&lt;img
+  height=&#34;auto&#34;
+  width=&#34;100%&#34;
+  ...
+/&gt;</code></pre></div>
+<p>With a wrapping grid component or similar, which determined the size of the images. However, this is not possible with the Next.js Image component, as the <code>width</code> and <code>height</code> are required values which must be integers (in pixels). This is done to prevent layout shift during loading, which is a common cause of a poor user experience. However, this behavior of requiring the <code>width</code> and <code>height</code> values can make the <code>Image</code> component quite unnatural to use at first. Even still, it is important to use <code>Image</code> and not <code>img</code>, as the Next.js variant provides additional benefits, such as being responsive by default, a priority prop, ability to set a placeholder image during loading, as well as other image optimizations.</p>
+<h2 id="hosting-your-nextjs-app">Hosting Your Next.js App</h2>
+<p>One of my favorite ways to host React apps has been through <a href="https://developers.cloudflare.com/pages/framework-guides/deploy-a-react-site/" target="_blank" rel="noopener noreffer ">Cloudflare Pages</a>. I enjoy how simple this method is with linking my GitHub account to Cloudflare for automatic deployments as well as using Cloudflare for purchasing and setting up custom domain names. Given this, I decided to host my first Next.js app through Cloudflare pages. I began following the <a href="https://developers.cloudflare.com/pages/framework-guides/nextjs/ssr/get-started/" target="_blank" rel="noopener noreffer ">Cloudflare docs</a> and eventually got the site deployed and &ldquo;working&rdquo;, after adding <code>export const runtime = &quot;edge&quot;;</code> to the top of every file. While I was able to successfully deploy the website, Next.js currently only supports the <a href="https://developers.cloudflare.com/pages/framework-guides/nextjs/ssr/get-started/#4-ensure-all-server-rendered-routes-use-the-edge-runtime" target="_blank" rel="noopener noreffer ">&ldquo;Edge&rdquo; runtime</a>. Next.js has two server runtimes available: Node.js (default) and Edge. The Node.js runtime has access to all Native Node.js APIs, while the Edge runtime contains a more limited set of APIs. This was a problem, as I was unable to use some packages, such as <a href="https://github.com/joe-bell/plaiceholder" target="_blank" rel="noopener noreffer ">plaiceholder</a>. It seemed like there were also other issues, such as with the Next.js <code>&lt;Image/&gt;</code> component optimizations and caching. Therefore, I switched to Vercel to host my website. Vercel worked great, and I was easily able to get everything up and running utilizing the latest Next.js features and optimizations. However, this soft &ldquo;vendor lock&rdquo; currently seems like one of the biggest downsides to using Next.js. To get the best experience, using Vercel currently feels required, and I image self-hosting a Next.js app would be even more challenging/limiting. That said, I expect better support for Next.js app hosting in the future, as well as more framework competition as products like Remix begin supporting all the latest React features.</p>
+<h2 id="nextjs-the-future-of-react">Next.js: the Future of React</h2>
+<p>Overall, I have been very impressed with Next.js. While it is quite opinionated about certain things (Image component, App router, etc.), the benefits are clear. Specifically, the App router is amazing, and I love using the folder and file naming conventions for pages. Given that the future of React is frameworks, I think that Next.js is well positioned to be the leading player.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-11-20</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/nextjs-for-react-devs/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/nextjs-for-react-devs/" data-title="Next.js for React Devs" data-hashtags="Next.js,React"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/nextjs-for-react-devs/" data-title="Next.js for React Devs"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/nextjs-for-react-devs/" data-hashtag="Next.js"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/nextjs-for-react-devs/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/nextjs-for-react-devs/" data-title="Next.js for React Devs"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/next.js/">Next.js</a>,&nbsp;<a href="/tags/react/">React</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/graphql-a-breathof-fresh-air/" class="prev" rel="prev" title="GraphQL: a Breath of Fresh Air"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>GraphQL: a Breath of Fresh Air</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Zachary M. Johnson</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/lite/browser.umd.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{},"search":{"algoliaAppID":"","algoliaIndex":"index","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script src="/js/theme.min.js"></script></body>
+</html>

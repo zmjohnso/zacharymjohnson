@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Streamlining Data Migrations in Contentful - Zachary M. Johnson</title><meta name="Description" content="Zachary M. Johnson&#39;s Personal Blog"><meta property="og:url" content="http://localhost:1313/streamlining-data-migrations-in-contentful/">
+  <meta property="og:site_name" content="Zachary M. Johnson">
+  <meta property="og:title" content="Streamlining Data Migrations in Contentful">
+  <meta property="og:description" content="Recently, I completed a large data migration on the PhotoVoice Japan website. The purpose of this migration was to clean up existing content models and utilize Contentful’s locales feature to allow for cleaner and more efficient multi-language support. Thanks to Contentful’s use of multiple Environments within a project Space, this migration was quite straightforward.
+Cloning your Existing Environment Fortunately, Contentful offers a very generous free “Intro” space license. Under the Intro license we are allowed three environments.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-05-11T18:45:02-04:00">
+    <meta property="article:modified_time" content="2024-05-11T18:45:02-04:00">
+    <meta property="article:tag" content="Contentful">
+    <meta property="og:image" content="http://localhost:1313/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/logo.png">
+  <meta name="twitter:title" content="Streamlining Data Migrations in Contentful">
+  <meta name="twitter:description" content="Recently, I completed a large data migration on the PhotoVoice Japan website. The purpose of this migration was to clean up existing content models and utilize Contentful’s locales feature to allow for cleaner and more efficient multi-language support. Thanks to Contentful’s use of multiple Environments within a project Space, this migration was quite straightforward.
+Cloning your Existing Environment Fortunately, Contentful offers a very generous free “Intro” space license. Under the Intro license we are allowed three environments.">
+<meta name="application-name" content="Zachary M. Johnson">
+<meta name="apple-mobile-web-app-title" content="Zachary M. Johnson">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://localhost:1313/streamlining-data-migrations-in-contentful/" /><link rel="next" href="http://localhost:1313/benefits-of-lifting-state-to-the-url/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/css/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Streamlining Data Migrations in Contentful",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/streamlining-data-migrations-in-contentful\/"
+        },"image": ["http:\/\/localhost:1313\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Contentful","wordcount":  586 ,
+        "url": "http:\/\/localhost:1313\/streamlining-data-migrations-in-contentful\/","datePublished": "2024-05-11T18:45:02-04:00","dateModified": "2024-05-11T18:45:02-04:00","publisher": {
+            "@type": "Organization",
+            "name": "Zachary M. Johnson","logo": "http:\/\/localhost:1313\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Zachary M. Johnson"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Zachary M. Johnson">Zachary M. Johnson</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/zmjohnso/zacharymjohnson" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Zachary M. Johnson">Zachary M. Johnson</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/zmjohnso/zacharymjohnson" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw' aria-hidden='true'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Streamlining Data Migrations in Contentful</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Zachary M. Johnson</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-05-11">2024-05-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;586 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#cloning-your-existing-environment">Cloning your Existing Environment</a></li>
+    <li><a href="#perform-the-data-migration">Perform the Data Migration</a></li>
+    <li><a href="#pointing-production-to-the-new-environment">Pointing Production to the New Environment</a></li>
+    <li><a href="#take-advantage-of-contentful-environments">Take Advantage of Contentful Environments</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Recently, I completed a large data migration on the <a href="https://photovoicejapan.com/" target="_blank" rel="noopener noreffer ">PhotoVoice Japan</a> website. The purpose of this migration was to clean up existing content models and utilize Contentful’s locales feature to allow for cleaner and more efficient multi-language support. Thanks to Contentful’s use of multiple Environments within a project Space, this migration was quite straightforward.</p>
+<h2 id="cloning-your-existing-environment">Cloning your Existing Environment</h2>
+<p>Fortunately, Contentful offers a very generous free &ldquo;Intro&rdquo; space license. Under the Intro license we are allowed three environments.</p>
+<figure><a class="lightgallery" href="/streamlining-data-migrations-in-contentful/contentful_space_licenses.png" title="/streamlining-data-migrations-in-contentful/contentful_space_licenses.png" data-thumbnail="/streamlining-data-migrations-in-contentful/contentful_space_licenses.png" data-sub-html="<h2>Contentful Space Licenses</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/streamlining-data-migrations-in-contentful/contentful_space_licenses.png"
+            data-srcset="/streamlining-data-migrations-in-contentful/contentful_space_licenses.png, /streamlining-data-migrations-in-contentful/contentful_space_licenses.png 1.5x, /streamlining-data-migrations-in-contentful/contentful_space_licenses.png 2x"
+            data-sizes="auto"
+            alt="/streamlining-data-migrations-in-contentful/contentful_space_licenses.png" width="1268" height="248" />
+    </a><figcaption class="image-caption">Contentful Space Licenses</figcaption>
+    </figure>
+<p>Having access to these multiple environments is what allows us to make a seamless data migration. In your current space you should already have one environment, something like &ldquo;master&rdquo;. To add a new environment, go to &ldquo;Settings&rdquo; in the top right corner and then select &ldquo;Environments&rdquo; from the dropdown. Next click &ldquo;Add environment&rdquo;. This should open a popup which asks you to name the new environment and also asks where you want to copy the new environments data from:</p>
+<figure><a class="lightgallery" href="/streamlining-data-migrations-in-contentful/contentful_add_environment.png" title="/streamlining-data-migrations-in-contentful/contentful_add_environment.png" data-thumbnail="/streamlining-data-migrations-in-contentful/contentful_add_environment.png" data-sub-html="<h2>Contentful Add Environment</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/streamlining-data-migrations-in-contentful/contentful_add_environment.png"
+            data-srcset="/streamlining-data-migrations-in-contentful/contentful_add_environment.png, /streamlining-data-migrations-in-contentful/contentful_add_environment.png 1.5x, /streamlining-data-migrations-in-contentful/contentful_add_environment.png 2x"
+            data-sizes="auto"
+            alt="/streamlining-data-migrations-in-contentful/contentful_add_environment.png" width="964" height="642" />
+    </a><figcaption class="image-caption">Contentful Add Environment</figcaption>
+    </figure>
+<p>Cloning from the current environment gives us an exact copy of our existing data that we are free to modify without affecting the original environment. This means you will have new copies of both your entries and content types in the new environment. After adding the new environment, you can access it by clicking on your space name in the top left corner and selecting it:</p>
+<figure><a class="lightgallery" href="/streamlining-data-migrations-in-contentful/contentful_environment_selection.png" title="/streamlining-data-migrations-in-contentful/contentful_environment_selection.png" data-thumbnail="/streamlining-data-migrations-in-contentful/contentful_environment_selection.png" data-sub-html="<h2>Contentful Environment Selection</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/streamlining-data-migrations-in-contentful/contentful_environment_selection.png"
+            data-srcset="/streamlining-data-migrations-in-contentful/contentful_environment_selection.png, /streamlining-data-migrations-in-contentful/contentful_environment_selection.png 1.5x, /streamlining-data-migrations-in-contentful/contentful_environment_selection.png 2x"
+            data-sizes="auto"
+            alt="/streamlining-data-migrations-in-contentful/contentful_environment_selection.png" width="734" height="562" />
+    </a><figcaption class="image-caption">Contentful Environment Selection</figcaption>
+    </figure>
+<h2 id="perform-the-data-migration">Perform the Data Migration</h2>
+<p>Now that we have a new &ldquo;v2&rdquo; environment, we can make whatever changes we want to the content models. In my case, this involved cleaning up some fields on various content models and adding a new locale. Contentful&rsquo;s free plan also allows you to utilize up to two locales. This feature can be accessed via &ldquo;Settings&rdquo; then selecting &ldquo;Locales&rdquo; from the dropdown menu. After adding the new locale and fixing the affected entries, we are ready to point our code to the new data.</p>
+<h2 id="pointing-production-to-the-new-environment">Pointing Production to the New Environment</h2>
+<p>In order to get your code working with the new environment, we will need to update a few secrets as well as change some API token settings in the Contentful dashboard. First, go to &ldquo;Settings&rdquo; then &ldquo;API keys&rdquo; in the Contentful dashboard. Here, you may either create a new API key or provide your current development access token with access to the new environment. For my use case, I opted for the latter. In the specific access token settings, you will simply want to scroll down to the bottom and make sure both environments are enabled:</p>
+<figure><a class="lightgallery" href="/streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png" title="/streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png" data-thumbnail="/streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png" data-sub-html="<h2>Contentful API Key Environment Selection</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png"
+            data-srcset="/streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png, /streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png 1.5x, /streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png 2x"
+            data-sizes="auto"
+            alt="/streamlining-data-migrations-in-contentful/contentful_access_token_environment_selection.png" width="1222" height="300" />
+    </a><figcaption class="image-caption">Contentful API Key Environment Selection</figcaption>
+    </figure>
+<p>On the code side of things, you will need to update your &ldquo;environment&rdquo; value from &ldquo;master&rdquo; to &ldquo;v2&rdquo;. Assuming this value is not hard-coded, you will also want to make sure you update the environment string in your deployment pipelines. Once your API key has been updated with the new permissions and your code has been changed to point to the new environment, you should start seeing your site utilizing your &ldquo;v2&rdquo; entries and content models.</p>
+<h2 id="take-advantage-of-contentful-environments">Take Advantage of Contentful Environments</h2>
+<p>Contentful environments are a powerful tool to update existing entries and content models without having to worry about affecting production data. Additionally, they allow you to keep around older versions of the data for future reference or revisions. Given that Contentful&rsquo;s free plan also allows usage of up to three environments, there is no reason not to take advantage of this feature. Hopefully utilizing multiple Contentful environments will allow you to update the content on your site with confidence!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-05-11</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/streamlining-data-migrations-in-contentful/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="http://localhost:1313/streamlining-data-migrations-in-contentful/" data-title="Streamlining Data Migrations in Contentful" data-hashtags="Contentful"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="http://localhost:1313/streamlining-data-migrations-in-contentful/" data-title="Streamlining Data Migrations in Contentful"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/streamlining-data-migrations-in-contentful/" data-hashtag="Contentful"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/streamlining-data-migrations-in-contentful/"><i class="fab fa-linkedin fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://localhost:1313/streamlining-data-migrations-in-contentful/" data-title="Streamlining Data Migrations in Contentful"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/contentful/">Contentful</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/benefits-of-lifting-state-to-the-url/" class="next" rel="next" title="Benefits of Lifting State to the URL">Benefits of Lifting State to the URL<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Zachary M. Johnson</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/lite/browser.umd.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"comment":{},"search":{"algoliaAppID":"","algoliaIndex":"index","algoliaSearchKey":"","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script src="/js/theme.min.js"></script></body>
+</html>

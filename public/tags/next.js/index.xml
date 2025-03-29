@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Next.js - Tag - Zachary M. Johnson</title>
+        <link>http://localhost:1313/tags/next.js/</link>
+        <description>Next.js - Tag - Zachary M. Johnson</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>zachary.business@tutanota.com (Zachary M. Johnson)</managingEditor>
+            <webMaster>zachary.business@tutanota.com (Zachary M. Johnson)</webMaster><lastBuildDate>Wed, 20 Nov 2024 13:00:00 -0500</lastBuildDate><atom:link href="http://localhost:1313/tags/next.js/" rel="self" type="application/rss+xml" /><item>
+    <title>Next.js for React Devs</title>
+    <link>http://localhost:1313/nextjs-for-react-devs/</link>
+    <pubDate>Wed, 20 Nov 2024 13:00:00 -0500</pubDate>
+    <author>Zachary M. Johnson</author>
+    <guid>http://localhost:1313/nextjs-for-react-devs/</guid>
+    <description><![CDATA[<p>I have always started my new web projects off with vanilla React, then added routing (<a href="https://reactrouter.com/en/main" target="_blank" rel="noopener noreffer ">react router</a>), state management (<a href="https://spin.atomicobject.com/zustand-alternative-redux/" target="_blank" rel="noopener noreffer ">zustand</a>), etc., once I had the need for them. As the project would grow over time, more and more packages would need to be added. Eventually, you basically end up with your own custom framework. This is why the React team <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreffer ">has started to recommend</a> building new apps and websites with an existing React framework. Some currently supported production ready frameworks include Next.js, Remix and Gatsby. However, at the time of this writing, only Next.js supports all the latest React features, such as <a href="https://react.dev/reference/rsc/server-components" target="_blank" rel="noopener noreffer ">React Server Components</a> (RSCs). Therefore, given the React teams recommendation to start new projects off with a framework, my own experience with building &ldquo;custom&rdquo; React frameworks and the ability to utilize cutting edge React features such as RSCs, I have started using Next.js for my new web apps. Here are a few challenges that I ran into, from the perspective of a React developer.</p>]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,22 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>GraphQL, REST - Tag - My New Hugo Site</title>
+        <link>http://localhost:1313/tags/graphql-rest/</link>
+        <description>GraphQL, REST - Tag - My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>zachary.business@tutanota.com (Zachary M. Johnson)</managingEditor>
+            <webMaster>zachary.business@tutanota.com (Zachary M. Johnson)</webMaster><lastBuildDate>Thu, 27 Mar 2025 14:06:38 -0300</lastBuildDate><atom:link href="http://localhost:1313/tags/graphql-rest/" rel="self" type="application/rss+xml" /><item>
+    <title>GraphQL: a Breath of Fresh Air</title>
+    <link>http://localhost:1313/graphql-a-breathof-fresh-air/</link>
+    <pubDate>Thu, 27 Mar 2025 14:06:38 -0300</pubDate>
+    <author>Zachary M. Johnson</author>
+    <guid>http://localhost:1313/graphql-a-breathof-fresh-air/</guid>
+    <description><![CDATA[<p>Recently, upon migrating <a href="https://www.lalisolari.com/" target="_blank" rel="noopener noreffer ">Lali Solari&rsquo;s</a> personal website from vanilla React to
+Next.js (see <a href="https://www.contentful.com/blog/integrate-contentful-next-js-app-router/" target="_blank" rel="noopener noreffer ">this Contentful blog post</a>
+for a great guide on getting started with Next.js App Router and Contentful), I decided to try out the Contentful GrapQL API.
+In the past, I have always used the <a href="https://github.com/contentful/contentful.js" target="_blank" rel="noopener noreffer ">Contentful Javascript SDK</a>, which is a great tool for
+interacting with the Contentful REST API. However, I wanted to use the native web fetch API to take advantage of specific Next.js
+features, such as caching, so I decided to give the GraphQL API a try. Thanks to the GraphiQL browser tool and the ability to only get
+back the data that I need, I found the Contentful GraphQL API experience even better than working with the Contentful Javascript SDK.</p>]]></description>
+</item>
+</channel>
+</rss>
