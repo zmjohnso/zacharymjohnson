@@ -394,8 +394,8 @@ clientSecret = ""
 # Valine comment config (https://github.com/xCss/Valine)
 [params.page.comment.valine]
 enable = true
-appId = ""
-appKey = ""
+appId = "Opn441GfO7343dusvnKI6fnK-MdYXbMMI"
+appKey = "DtyHr2od2SmZuJoSBzRzSMiV"
 placeholder = ""
 avatar = "mp"
 meta = ""
@@ -406,7 +406,7 @@ visitor = true
 recordIP = true
 highlight = true
 enableQQ = false
-serverURLs = ""
+serverURLs = "https://opn441gf.api.lncldglobal.com"
 # emoji data file name, default is "google.yml"
 # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
 # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
