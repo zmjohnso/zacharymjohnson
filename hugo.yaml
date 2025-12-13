@@ -33,7 +33,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/Johnson_Zachary.png
 
     article:
         math: false
