@@ -12,7 +12,13 @@ menu:
 
 ## Career
 
-I launched my professional career in February, 2021 at the software consultancy Atomic Object. While at Atomic I have worked on multiple projects with a variety of tech stacks, including React/Node and Angular/.NET Core projects. In addition to this site, my writings can be found on the Atomic Object blog, known as [Spin](https://spin.atomicobject.com/author/zach-johnson/).
+I launched my professional career in February, 2021 at the software consultancy Atomic Object. While at Atomic I worked on multiple projects with a variety of tech stacks, including React/Node and Angular/.NET Core projects. Some of my writings from that time can be found on the Atomic Object blog, known as [Spin](https://spin.atomicobject.com/author/zach-johnson/).
+
+In May of 2025, I joined Capital One as a Software Engineer, where I work on a Vue/Python project hosted on AWS.
+
+## Certifications
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="89adfcaf-13d2-43ae-9a4f-dc5883dd4b67" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 ## Interests
 
