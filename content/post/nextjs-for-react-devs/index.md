@@ -3,6 +3,7 @@ title = 'Next.js for React Devs'
 date = 2024-11-20T13:00:00-05:00
 draft = false
 tags = ["Next.js", "React"]
+categories = ["Software Development"]
 +++
 
 I have always started my new web projects off with vanilla React, then added routing ([react router](https://reactrouter.com/en/main)), state management ([zustand](https://spin.atomicobject.com/zustand-alternative-redux/)), etc., once I had the need for them. As the project would grow over time, more and more packages would need to be added. Eventually, you basically end up with your own custom framework. This is why the React team [has started to recommend](https://react.dev/learn/start-a-new-react-project) building new apps and websites with an existing React framework. Some currently supported production ready frameworks include Next.js, Remix and Gatsby. However, at the time of this writing, only Next.js supports all the latest React features, such as [React Server Components](https://react.dev/reference/rsc/server-components) (RSCs). Therefore, given the React teams recommendation to start new projects off with a framework, my own experience with building "custom" React frameworks and the ability to utilize cutting edge React features such as RSCs, I have started using Next.js for my new web apps. Here are a few challenges that I ran into, from the perspective of a React developer.

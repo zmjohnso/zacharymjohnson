@@ -3,6 +3,7 @@ date = '2024-05-11T18:45:02-04:00'
 draft = false
 title = 'Streamlining Data Migrations in Contentful'
 tags = ["Contentful"]
+categories = ["Software Development"]
 +++
 
 Recently, I completed a large data migration on the [PhotoVoice Japan](https://photovoicejapan.com/) website. The purpose of this migration was to clean up existing content models and utilize Contentful’s locales feature to allow for cleaner and more efficient multi-language support. Thanks to Contentful’s use of multiple Environments within a project Space, this migration was quite straightforward.

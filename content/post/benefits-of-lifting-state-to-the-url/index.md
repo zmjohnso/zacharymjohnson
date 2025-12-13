@@ -3,6 +3,7 @@ title = 'Benefits of Lifting State to the URL'
 date = 2024-06-27T18:45:02-04:00
 draft = false
 tags = ["State Management"]
+categories = ["Software Development"]
 +++
 
 I recently found myself needing to lift some parts of my application state into the URL.

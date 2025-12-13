@@ -3,6 +3,7 @@ date = '2024-10-03T13:00:00-04:00'
 draft = false
 title = 'GraphQL: a Breath of Fresh Air'
 tags = ["GraphQL", "REST"]
+categories = ["Software Development"]
 +++
 
 Recently, upon migrating [Lali Solari's](https://www.lalisolari.com/) personal website from vanilla React to
