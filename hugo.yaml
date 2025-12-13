@@ -1,0 +1,116 @@
+baseurl: https://zacharymjohnson.blog/
+languageCode: en-us
+theme: stack
+title: Zachary M. Johnson
+
+DefaultContentLanguage: en
+hasCJKLanguage: false
+
+pagination:
+    pagerSize: 10
+
+permalinks:
+    post: /:slug/
+    page: /:slug/
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon:
+
+    footer:
+        since: 2025
+        customText:
+
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 MST
+
+    sidebar:
+        subtitle: Software Consultant & Developer
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.png
+
+    article:
+        math: false
+        toc: true
+        readingTime: true
+        license:
+            enabled: true
+            default: Licensed under CC BY-NC-SA 4.0
+
+    comments:
+        enabled: false
+
+    widgets:
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
+
+    colorScheme:
+        toggle: true
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+menu:
+    main: []
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/zmjohnso
+          params:
+              icon: brand-github
+
+        - identifier: linkedin
+          name: LinkedIn
+          url: https://linkedin.com/in/zachary-m-johnson
+          params:
+              icon: brand-linkedin
+
+        - identifier: email
+          name: Email
+          url: mailto:zachary.business@tutanota.com
+          params:
+              icon: mail
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: false
+        codeFences: true
+        guessSyntax: true
+        lineNoStart: 1
+        lineNos: true
+        lineNumbersInTable: true
+        tabWidth: 4
