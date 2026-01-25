@@ -20,6 +20,8 @@ In May of 2025, I joined Capital One as a Software Engineer, where I work on a V
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="89adfcaf-13d2-43ae-9a4f-dc5883dd4b67" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="dbb0beae-315a-4452-a0d7-1a9ef2fc3ae9" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
 ## Interests
 
 My technical interests include all things web development, Bitcoin and Austrian economics. When away from the computer I enjoy running and balance sports.
