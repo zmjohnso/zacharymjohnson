@@ -2,6 +2,7 @@
 title = 'Next.js for React Devs'
 date = 2024-11-20T13:00:00-05:00
 draft = false
+description = "A React developer's notes on moving into Next.js, including server components, the Image component, hosting, and tradeoffs."
 tags = ["Next.js", "React"]
 categories = ["Software Development"]
 +++

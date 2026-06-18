@@ -2,6 +2,7 @@
 date = '2024-05-11T18:45:02-04:00'
 draft = false
 title = 'Streamlining Data Migrations in Contentful'
+description = 'How Contentful environments can make content model and locale migrations safer, more testable, and easier to deploy.'
 tags = ["Contentful"]
 categories = ["Software Development"]
 +++

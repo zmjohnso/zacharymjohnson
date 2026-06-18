@@ -3,6 +3,7 @@ title: "About"
 date: 2025-03-29
 layout: "page"
 slug: "about"
+description: "About Zachary M. Johnson, a software consultant and developer working on web applications, cloud-backed tools, and maintainable systems."
 menu:
     main:
         weight: 2

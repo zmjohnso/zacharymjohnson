@@ -1,0 +1,30 @@
+.home-intro {
+    background: var(--card-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-l1);
+    color: var(--card-text-color-main);
+    margin-bottom: var(--section-separation);
+    padding: var(--card-padding);
+
+    h2 {
+        font-size: 2.4rem;
+        margin: 0 0 1rem;
+    }
+
+    p {
+        color: var(--card-text-color-secondary);
+        font-size: 1.6rem;
+        line-height: 1.7;
+        margin: 0;
+
+        & + p {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.site-avatar .site-logo {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}

@@ -2,6 +2,7 @@
 title = 'Benefits of Lifting State to the URL'
 date = 2024-06-27T18:45:02-04:00
 draft = false
+description = 'Why moving shareable application state into the URL can simplify state management, debugging, and cross-tab workflows.'
 tags = ["State Management"]
 categories = ["Software Development"]
 +++
